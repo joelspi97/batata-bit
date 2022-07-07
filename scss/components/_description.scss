@@ -16,13 +16,13 @@
   }
 
   .description__heading-container {
-      h1 {
+      h2 {
         margin-bottom: 2.4rem;
       }
 
       p {
         margin-bottom: 3.2rem;
-        color: $dark-grey;
+        color: $light-grey;
       }
   }
   .description__article {
@@ -31,7 +31,7 @@
     margin-bottom: 1.6rem;
     text-align: initial;
     background-color: $soft-warm-black;
-    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.7);
     border-radius: 0.4rem;
 
     .icon {
@@ -55,7 +55,7 @@
         background-image: url("../assets/icons/check-circle.svg");
     }
 
-    h2 {
+    h3 {
         margin: 1rem auto;
         color: $just-white;
         line-height: 1.8rem;
@@ -64,7 +64,7 @@
     }
     
     p {
-        color: $dark-grey;
+        color: $light-grey;
     }
   }
 }
@@ -76,6 +76,15 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .description {
+    &__articles-container {
+      max-width: 190rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }

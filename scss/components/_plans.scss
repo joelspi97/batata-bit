@@ -6,7 +6,7 @@
   background-color: $off-white;
   
   .text-container {
-    h1 {
+    h2 {
       color: $warm-black;
     }
     
@@ -43,7 +43,7 @@
       text-align: center;
       background-color: $just-white;
       border-radius: 0.8rem;
-      box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+      box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.7);
 
       transition: all 500ms;
       scroll-snap-align: center;
@@ -51,22 +51,21 @@
       .recommended {
         position: absolute;
         top: calc(0% - 1.55rem);
-        left: calc(50% - 4.93rem);
-        width: max-content;
+        left: calc(50% - 5.55rem);
         padding: 0.8rem;
         font-family: $table-font;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: bold;
         line-height: 1.5rem;
         text-align: center;
-        background-color: $bitcoin-orange;
+        background-color: $secondary-blue;
         border-radius: 0.8rem;
         color: $just-white;
       }
 
-      h2 {
+      h3 {
         margin-bottom: 0.8rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.8rem;
       }
 
@@ -78,14 +77,6 @@
         line-height: 6.3rem;
       }
 
-      .price::first-letter {
-        vertical-align: 200%;
-        color: $soft-warm-black;
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 1.5rem;
-      }
-
       .secondary-card__price {
         margin-bottom: 6rem;
       }
@@ -93,9 +84,9 @@
       .saving {
         max-width: 16rem;
         margin-bottom: 1.6rem;
-        color: $dark-grey;
+        color: $grey;
         font-family: $table-font;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 1.45rem;
       }
 
@@ -103,18 +94,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: auto;
         padding: 1.2rem 1.6rem;
 
         color: $warm-black;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: bold;
         line-height: 1.8rem;
 
         background-color: $off-white;
-        border: 0.2rem solid $bitcoin-orange;
+        border: 0.2rem solid $secondary-blue;
         border-radius: 0.4rem;
-        transition: all 500ms;
+        transition: background-color 300ms ease-in-out;
         cursor: pointer;
+
+        &:hover,
+        &:focus-visible {
+          background-color: $soft-orange;
+          color: black;
+        }
+
         .orange-arrow-icon {
           width: 2.4rem;
           height: 2.4rem;
@@ -122,22 +121,10 @@
           background-image: url("../assets/icons/orange-right-arrow.svg");
         }
       }
-
-      button:hover {
-        background-color: $soft-orange;
-        box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
-        color: black;
-      }
     }
 
     .monthly-card {
       margin-left: 3.5rem;
     }
-  }
-}
-
-@media (min-width: 900px) {
-  .plans-slider__card:hover {
-    transform: scale(1.2);
   }
 }

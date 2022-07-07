@@ -13,14 +13,14 @@
   }
 
   &__text-container {
-    h1 {
+    h2 {
     color: $warm-black;
     }
 
     p {
     margin-top: 2.4rem;
     margin-bottom: 4.8rem;
-    color: $dark-grey;
+    color: $grey;
     }
   }
 
@@ -31,6 +31,8 @@
     overflow-y: hidden;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    max-width: 100rem;
+    margin: 0 auto;
 
     .currencies-tables__container {
         display: flex;
@@ -41,13 +43,12 @@
         text-align: initial;
         scroll-snap-align: center;
 
-        h2 {
+        h3 {
             margin: 0 0 1.2rem 1.2rem;
-
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
             line-height: 2.3rem;
-            color: $bitcoin-orange;
+            color: $secondary-blue;
         }
 
         table {
@@ -62,16 +63,19 @@
             td {
                 padding: 1rem 1.2rem;
                 background-color: $just-white;
+                border: 0.2rem solid #8a8989;
+
+                .trending-down-icon,
+                .trending-up-icon {
+                    width: 2rem;
+                    height: 1.2rem;
+                }
                 
                 .trending-down-icon {
-                    width: 1.1rem;
-                    height: 0.6rem;
                     background-image: url("../assets/icons/trending-down.svg");
                 }
 
                 .trending-up-icon {
-                    width: 1.1rem;
-                    height: 0.6rem;
                     background-image: url("../assets/icons/trending-up.svg");
                 }
             }
@@ -85,7 +89,7 @@
                 font-size: 1.4rem;
                 line-height: 1.7rem;
 
-                color: $dark-grey;
+                color: $grey;
             }
 
             .table-top-left {
@@ -112,23 +116,15 @@
             border-radius: 0.8rem;
             width: max-content;
             font-family: $table-font;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 1.5rem;
-            background-color: $soft-orange;
+            background-color: $soft-blue;
         }
     }
 
     .commissions__table-container {
         margin: 0;
         margin-right: 6.2rem;
-        
-        .commissions__heading {
-            color: $secondary-blue;
-        }
-
-        .commissions__update {
-            background-color: $soft-blue;
-        }
     }
 
     .right-arrow-icon {
