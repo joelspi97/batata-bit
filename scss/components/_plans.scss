@@ -1,0 +1,143 @@
+@import '../abstracts/variables';
+
+.plans {
+  width: 100%;
+  padding-top: 6.4rem;
+  background-color: $off-white;
+  
+  .text-container {
+    h1 {
+      color: $warm-black;
+    }
+    
+    p {
+      margin-top: 2.4rem;
+    }
+  }
+
+  .plans-slider {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+
+    background-color: $off-white;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+
+    &__card {
+      position: relative;
+      width: 30%;
+      min-width: 19rem;
+      padding: 3.1rem 1.6rem 2.4rem;
+      margin-right: 3.5rem;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      text-align: center;
+      background-color: $just-white;
+      border-radius: 0.8rem;
+      box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+
+      transition: all 500ms;
+      scroll-snap-align: center;
+
+      .recommended {
+        position: absolute;
+        top: calc(0% - 1.55rem);
+        left: calc(50% - 4.93rem);
+        width: max-content;
+        padding: 0.8rem;
+        font-family: $table-font;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+        text-align: center;
+        background-color: $bitcoin-orange;
+        border-radius: 0.8rem;
+        color: $just-white;
+      }
+
+      h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+      }
+
+      .price {
+        margin-bottom: 1.6rem;
+        font-family: $table-font;
+        font-size: 5.2rem;
+        font-weight: bold;
+        line-height: 6.3rem;
+      }
+
+      .price::first-letter {
+        vertical-align: 200%;
+        color: $soft-warm-black;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+
+      .secondary-card__price {
+        margin-bottom: 6rem;
+      }
+
+      .saving {
+        max-width: 16rem;
+        margin-bottom: 1.6rem;
+        color: $dark-grey;
+        font-family: $table-font;
+        font-size: 1.2rem;
+        line-height: 1.45rem;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem 1.6rem;
+
+        color: $warm-black;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+
+        background-color: $off-white;
+        border: 0.2rem solid $bitcoin-orange;
+        border-radius: 0.4rem;
+        transition: all 500ms;
+        cursor: pointer;
+        .orange-arrow-icon {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-left: 0.6rem;
+          background-image: url("../assets/icons/orange-right-arrow.svg");
+        }
+      }
+
+      button:hover {
+        background-color: $soft-orange;
+        box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+        color: black;
+      }
+    }
+
+    .monthly-card {
+      margin-left: 3.5rem;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .plans-slider__card:hover {
+    transform: scale(1.2);
+  }
+}

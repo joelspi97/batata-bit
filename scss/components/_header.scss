@@ -1,0 +1,54 @@
+@import '../abstracts/variables';
+
+.header {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
+  &__logo {
+    margin: 3.9rem auto 3.3rem;
+  }
+
+  &__text-container {
+    position: relative;
+
+    p {
+        margin-top: 2.4rem;
+        padding-bottom: 6.1rem;
+        color: $soft-orange;   
+    }
+  }
+
+  &__button {
+    position: absolute;
+    left: calc(50% - 11.45rem);
+    top: calc(100% - 2.7rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.8rem;
+    width: 22.9rem;
+    padding: 1.2rem 1.6rem;
+    
+    color: $warm-black;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    
+    transition: background-color 500ms;
+    border-radius: 0.4rem;
+    background-color: $off-white;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+
+    .down-arrow-icon {
+    margin-left: 1rem;
+    }
+  }
+
+  &__button:hover {
+    background-color: $soft-orange;
+  }
+}

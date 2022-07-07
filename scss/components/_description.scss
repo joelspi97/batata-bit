@@ -1,0 +1,81 @@
+@import '../abstracts/variables';
+
+.description {
+  position: relative;
+  width: 100%;
+  background-color: $warm-black;
+  padding: 6.4rem 0;
+
+  .batata-icon {
+    position: absolute;
+    top: calc(0% - 1.2rem);
+    left: calc(50% - 2.05rem);
+    width: 4.1rem;
+    height: 2.4rem;
+    background-image: url("../assets/icons/batata.svg");
+  }
+
+  .description__heading-container {
+      h1 {
+        margin-bottom: 2.4rem;
+      }
+
+      p {
+        margin-bottom: 3.2rem;
+        color: $dark-grey;
+      }
+  }
+  .description__article {
+    max-width: 43rem;
+    padding: 1.4rem 2rem 2.2rem 1.6rem;
+    margin-bottom: 1.6rem;
+    text-align: initial;
+    background-color: $soft-warm-black;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+    border-radius: 0.4rem;
+
+    .icon {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .clock-icon {
+        background-image: url("../assets/icons/clock.svg");
+    }
+
+    .eye-icon {
+        background-image: url("../assets/icons/eye.svg");
+    }
+
+    .dollar-sign-icon {
+        background-image: url("../assets/icons/dollar-sign.svg");
+    }
+
+    .check-circle-icon {
+        background-image: url("../assets/icons/check-circle.svg");
+    }
+
+    h2 {
+        margin: 1rem auto;
+        color: $just-white;
+        line-height: 1.8rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    
+    p {
+        color: $dark-grey;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .description {
+    &__articles-container {
+      max-width: 90rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
