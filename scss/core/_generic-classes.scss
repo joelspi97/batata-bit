@@ -2,34 +2,34 @@
 
 .section-heading {
   color: $just-white;
-  font-weight: bold;
   font-size: 2.4rem;
+  font-weight: bold;
   line-height: 2.6rem;
 }
 
 .text {
-  font-weight: 500;
   font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.8rem;
 }
 
 .text-container {
-  width: 90%;
   margin: 0 auto;
   text-align: center;
+  width: 90%;
 }
 
 .icon {
-  display: inline-block;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  display: inline-block;
 }
 
 .down-arrow-icon {
-  min-width: 1.2rem;
-  height: 0.8rem;
   background-image: url("../assets/icons/down-arrow.svg");
+  height: 0.8rem;
+  min-width: 1.2rem;
 }
 
 .sr-only {

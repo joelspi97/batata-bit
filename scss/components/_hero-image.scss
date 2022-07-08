@@ -1,19 +1,17 @@
 @import '../abstracts/variables';
 
 .hero-image-container {
-  width: 100%;
+  align-items: center;
+  background-image: url("../assets/img/bitcoinbaby.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   height: 38.7rem;
+  justify-content: center;
   padding: 6.4rem;
   text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-image: url("../assets/img/bitcoinbaby.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
 
   h2 {
     background-color: rgba(32, 30, 28, 0.8);
